@@ -8,7 +8,10 @@ class ProjectHandler
     {
         if ($domain = $this->get_domain($domain)) {
             return $this->getData($domain);
-        } else return false;
+        } else {
+            header('location: https://www.codeseasy.com');
+        }
+        return false;
     }
 
     function get_domain($url)
