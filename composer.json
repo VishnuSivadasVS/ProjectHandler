@@ -1,0 +1,21 @@
+{
+    "name": "codeseasy/projecthandler",
+    "description": "Manage the project",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "codeseasy\\projecthandler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Codes Easy",
+            "email": "support@codeseasy.com",
+            "homepage": "https://www.codeseasy.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5 || ^8.0"
+    }
+}
