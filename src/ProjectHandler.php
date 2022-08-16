@@ -7,9 +7,10 @@ class ProjectHandler
     function init($domain)
     {
         if ($domain = $this->get_domain($domain)) {
-            return $this->getData($domain);
-        } else {
-            header('location: https://www.codeseasy.com');
+            if ($data = $this->getData($domain))
+                return $data;
+            else
+                header('location: https://www.codeseasy.com');
         }
         return false;
     }
